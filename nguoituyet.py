@@ -83,7 +83,7 @@ p.forward(60)
 p.right(20)
 p.forward(20)
 p.pendown()
-p.color('brown')
+p.fillcolor('brown')
 p.begin_fill()
 p.left(45)
 p.forward(30)
@@ -125,7 +125,7 @@ p.forward(90)
 p.pendown()
 
 
-p.color('brown')
+p.fillcolor('brown')
 p.begin_fill()
 for i in range(3):
     p.right(20)
@@ -403,7 +403,8 @@ p.right(180)
 p.forward(25)
 p.pendown()
 
-p.color('black')
+p.fillcolor('brown')
+p.begin_fill()
 
 for i in range(3):
     p.left(20)
@@ -476,6 +477,7 @@ p.forward(10)
 p.left(30)
 p.forward(20)
 
+p.end_fill()
 
 #end
 turtle.done()
