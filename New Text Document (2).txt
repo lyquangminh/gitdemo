@@ -1,0 +1,52 @@
+name = input("Nhập tên cần tìm: ")
+
+chara = "áàảãạắằẳẵặâấầẩẫậ"
+charA = chara.upper()
+charo = "óòỏõọơớờởỡợôốồổỗộ"
+charO = charo.upper()
+chari = "íìỉĩị"
+charI = chari.upper()
+chare = "éèẻẽẹêếềểễệ"
+charE = chare.upper()
+chard = "đ"
+charD = "Đ"
+chary = "ýỳỷỹỵ"
+charY = chary.upper()
+charu = "úùủũụưứừửữự"
+charU = charu.upper()
+
+fname = ""
+
+for wd in name:
+    if wd in chara:
+        fname += "a"
+    elif wd in charA:
+        fname += "A"
+    elif wd in charo:
+        fname += "o"
+    elif wd in charO:
+        fname += "O"
+    elif wd in chari:
+        fname += "i"
+    elif wd in charI:
+        fname += "I"
+    elif wd in chare:
+        fname += "e"
+    elif wd in charE:
+        fname += "E"
+    elif wd in chary:
+        fname += "y"
+    elif wd in charY:
+        fname += "Y"
+    elif wd in chard:
+        fname += "d"
+    elif wd in charD:
+        fname += "D"
+    elif wd in charu:
+        fname += "u"
+    elif wd in charU:
+        fname += "U"
+    else:
+        fname += wd
+
+print (fname)
